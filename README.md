@@ -1,8 +1,17 @@
-# 📌 Youssef Elfadili | Ingénieur Réseaux & Cybersécurité | SOC Analyst  
+██    ██  ██████  ██    ██ ███████ ███████ ███████ ███████ 
+██    ██ ██    ██ ██    ██ ██      ██      ██      ██      
+██    ██ ██    ██ ██    ██ ███████ █████   █████   ███████ 
+ ██  ██  ██    ██ ██    ██      ██ ██           ██      ██ 
+  ████    ██████   ██████  ███████ ███████ ███████ ███████ 
+
+          Youssef Elfadili | Cybersecurity Engineer & SOC Analyst
+
+
+
+# 📌 Hi, I'am Youssef Elfadili | Ingénieur Réseaux & Cybersécurité | SOC Analyst  
 
 Bienvenue sur mon espace GitHub !  
-Je suis passionné par la cybersécurité, la défense réseau, et l'automatisation SOC.  
-Diplômé en ingénierie des réseaux et cybersécurité, et formé à l'école de programmation 1337.
+
 
 ---
 
