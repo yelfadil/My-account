@@ -1,50 +1,53 @@
-# Auto-SOC-Triage
-# Author: Youssef Elfadili
-# Simple log triage tool for SOC investigations
+# 📌 Youssef Elfadili | Ingénieur Réseaux & Cybersécurité | SOC Analyst  
 
-import re
-import datetime
+Bienvenue sur mon espace GitHub !  
+Je suis passionné par la cybersécurité, la défense réseau, et l'automatisation SOC.  
+Diplômé en ingénierie des réseaux et cybersécurité, et formé à l'école de programmation 1337.
 
-# Patterns MITRE ATT&CK simples (exemples)
-MITRE_PATTERNS = {
-    "T1078": r"Login\sfailed\sfor\suser",
-    "T1059": r"(powershell.exe|cmd.exe)",
-    "T1021": r"Remote\sdesktop\sconnection",
-}
+---
 
-def analyze_log_line(line):
-    detections = []
-    for technique, pattern in MITRE_PATTERNS.items():
-        if re.search(pattern, line, re.IGNORECASE):
-            detections.append(technique)
-    return detections
+## 🚀 À propos de moi
 
-def generate_report(findings):
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    filename = f"triage_report_{timestamp}.txt"
-    with open(filename, 'w') as report:
-        for entry in findings:
-            report.write(f"{entry['line'].strip()} => Detected: {', '.join(entry['detections'])}\n")
-    print(f"[+] Rapport généré : {filename}")
+- 🎓 Diplômé en Réseaux, Intelligence et Cybersécurité
+- 🏢 Analyste SOC dans un environnement multinational
+- 🛡️ Déploiement de solutions SIEM/SOAR, alignement sur MITRE ATT&CK
+- 🛠️ Automatisation de la réponse aux incidents
+- 🧠 Certifications : eCDFP | eCPPT | LogRhythm
 
-def main():
-    log_file = input("Entrez le chemin du fichier log à analyser : ")
-    findings = []
-    try:
-        with open(log_file, 'r') as logs:
-            for line in logs:
-                detections = analyze_log_line(line)
-                if detections:
-                    findings.append({'line': line, 'detections': detections})
-    except FileNotFoundError:
-        print("[-] Fichier non trouvé.")
-        return
-    
-    if findings:
-        print(f"[+] {len(findings)} alertes détectées. Génération du rapport...")
-        generate_report(findings)
-    else:
-        print("[+] Aucune activité suspecte détectée.")
+---
 
-if __name__ == "__main__":
-    main()
+## 💻 Compétences Techniques
+
+| Domaine                  | Compétences Principales                         |
+|---------------------------|-------------------------------------------------|
+| **Cybersécurité**         | SIEM/SOAR, Threat Hunting, Incident Response    |
+| **Détection & Analyse**   | MITRE ATT&CK, Wazuh, OpenAppSec, Cortex, Shuffle |
+| **Réseaux**               | pfSense, VPN, IDS/IPS, Analyse de paquets        |
+| **Programmation/Scripting** | Python, Bash, Automatisation des workflows    |
+| **Data & Monitoring**     | Elasticsearch, Kibana, Dashboards               |
+
+---
+
+## 📚 Projets et Contributions
+
+- 🔍 Développement de playbooks SOAR pour l’automatisation de réponses
+- 🔒 Conception d'architectures SIEM robustes pour la détection avancée
+- ⚡ Simulation pédagogique de Remote Access Tool (RAT) pour l'entraînement
+
+---
+
+## 🌟 Objectif
+
+**Partager mes connaissances**, contribuer à la communauté cybersécurité, et continuer à apprendre chaque jour.  
+N'hésitez pas à explorer mes projets ou à me contacter pour collaborer !
+
+---
+
+## 📫 Me contacter
+
+- [LinkedIn](#) <!-- Remplace # par ton vrai lien LinkedIn -->
+- [Email](#) <!-- Remplace # par ton adresse email professionnelle -->
+
+---
+
+### 🔥 *« In cybersecurity, the best defense is an intelligent offense. »*  
